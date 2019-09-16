@@ -59,3 +59,9 @@ function simple_assembler(program, context) {
 ```
 
 Other examples can be finded in my github repositories.
+
+**Expirience** My expirience is mainly a problem solving on a sites like codewars. I finish reading of SICP but to be fair i didnt finish all problems of SICP, also i have few projects that include frameworks such as react, and redux they can be finded on my github.
+
+**Education** My education mostly consists of reading online courses such as https://learn.javascript.ru/ and solving problems tha it have, also i studied html and css on htmlacademy, and on some others.
+
+**English** I have some practice in a spoken english cause my neighbour is a student from Africa and we have a plenty conversations with him but unfortunately i have some dificulties in writing in English.
