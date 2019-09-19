@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Codejam-cv</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>About me</h1>
+  </header>
+  <main>
+    <article tabindex="1">
+      <h2>My name</h2>
+      <p>Bakanov Ilya Sergeevich</p>
+    </article>
+    <div class = "regular-info">
+      <article tabindex="2">
+        <h2>My mail</h2>
+        <p>nextdesusu@gmail.com, other way to cantact me is by call me, my phone number is +79171498969 </p>
+      </article>
+      <article tabindex="3">
+        <h2>My goal</h2>
+        <p>here is to learn how to work with a team and understand what kind of skills my potential employer 
+          may need. I however do have some troubles with github for example and some others, so find this training 
+        useful.</p>
+      </article>
+      <article tabindex="4">
+        <h2>My skills</h2>
+        <p>i know syntax of js, html, css and familiar with some of frameworks such as 
+          react.js, express.js, etc... Also i'm familiar with python and c++ syntax and django 
+        framework for python.</p>
+      </article>
+      <article tabindex="5">
+        <h2>Expirience</h2>
+        <p>My expirience is mainly a problem solving on a sites like codewars. I finish reading of SICP but to be fair i didnt 
+          finish all problems of SICP, also i have few projects that include frameworks such as react, and redux they can 
+        be finded on my github.</p>
+      </article>
+      <article tabindex="6">
+        <h2>Education</h2>
+        <p>My education mostly consists of reading online courses such as https://learn.javascript.ru/ and solving problems 
+          that it have, also i studied html and css on htmlacademy, and on some others.</p>
+      </article>
+      <article tabindex="7">
+        <h2>English</h2>
+        <p>I have some practice in a spoken english cause my neighbour is a student from Africa and we have a plenty conversations 
+          with him but unfortunately i have some dificulties in writing in English.</p>
+      </article>
+      <!--regular-info-->
+    </div>
+    <article tabindex="8">
+        <h2>Code examples</h2>
+        <p>This is my solution of love triangles, i thought it can be good example of my code because, its related to rsschool.</p>
+        <pre class="code">
+          module.exports = function getLoveTrianglesCount(preferences = []) {
+            let pairCounter = 0, inLove = {};
+            for (let i = 0; i < preferences.length; i++){
+              let a = preferences[i], b = preferences[a - 1], c = preferences[b - 1];
+              if (preferences[c - 1] === a && (a != b && a != c && b != c) && !inLove[a] && !inLove[b] && !inLove[c]){
+                ++pairCounter;
+                inLove[a] = true;
+                inLove[b] = true;
+                inLove[c] = true;
+              }
+            }
+            return pairCounter;
+          };
+
+          
+
+          function tokenize(sign){
+            if (!isNaN(Number(sign))){
+              return Number(sign);
+            }
+            return sign;
+          }
+          
+          function simple_assembler(program, context) {
+              let output = context || {}, commands, key, val1, val2;
+              for (let i = 0; i < program.length; i++){
+                  commands = program[i].split(' ');
+                  key = commands[0], val1 = tokenize(commands[1]), val2 = tokenize(commands[2]);
+                  if (key === "mov"){
+                      if (typeof val2 === "string"){
+                          output[val1] = output[val2];
+                      } else {
+                          output[val1] = val2;
+                      }
+                  } else if (key === "inc"){
+                      ++output[val1];
+                  } else if (key === "dec"){
+                      --output[val1];
+                  } else if (key === "jnz"){
+                      if (output[val1] !== 0){
+                          i += val2 - 1;
+                      }
+                  }
+              }
+            return output;
+          };
+        </pre>
+      </article>
+  </main>
+  <footer>
+      <p>Git: <a href="https://github.com/nextdesusu">nextdesusu</a></p>
+  </footer>
+</body>
+</html>

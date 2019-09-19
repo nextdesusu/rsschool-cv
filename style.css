@@ -1,0 +1,50 @@
+body {
+    max-width: 1024px;
+    font-family: "Arial", serif;
+    color: rgb(248, 237, 203);
+    margin: 0 auto;
+    background-image: url("background.jpg");
+}
+
+header {
+    text-align: center;
+    border-radius: 30px;
+}
+
+main {
+    
+}
+
+.regular-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+article {
+    background-color: rgba(49, 153, 223, .6);
+    border-radius: 30px;
+    border: 1px dotted rgba(6, 35, 54, 0.5);
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    transition: background-color .2s;
+}
+
+article:hover{
+    background-color: rgba(49, 153, 223, 1);
+}
+
+.code {
+    text-align: left;
+}
+
+
+footer {
+    text-align: center;
+    border-radius: 30px;
+}
+
+footer a {
+    color: white;
+}
