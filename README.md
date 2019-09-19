@@ -1,1 +1,1 @@
-# rsschool-cv
+#My solution to codejam-cv task
