@@ -13,6 +13,12 @@
     <article tabindex="1">
       <h2>My name</h2>
       <p>Bakanov Ilya Sergeevich</p>
+      <figure>
+          <img src="">
+          <figcaption>
+            Мое фото
+          </figcaption>
+      </figure>
     </article>
     <div class = "regular-info">
       <article tabindex="2">
@@ -32,7 +38,7 @@
         framework for python.</p>
       </article>
       <article tabindex="5">
-        <h2>Expirience</h2>
+        <h2>Experience</h2>
         <p>My expirience is mainly a problem solving on a sites like codewars. I finish reading of SICP but to be fair i didnt 
           finish all problems of SICP, also i have few projects that include frameworks such as react, and redux they can 
         be finded on my github.</p>
@@ -53,53 +59,21 @@
         <h2>Code examples</h2>
         <p>This is my solution of love triangles, i thought it can be good example of my code because, its related to rsschool.</p>
         <pre class="code">
-          module.exports = function getLoveTrianglesCount(preferences = []) {
-            let pairCounter = 0, inLove = {};
-            for (let i = 0; i < preferences.length; i++){
-              let a = preferences[i], b = preferences[a - 1], c = preferences[b - 1];
-              if (preferences[c - 1] === a && (a != b && a != c && b != c) && !inLove[a] && !inLove[b] && !inLove[c]){
-                ++pairCounter;
-                inLove[a] = true;
-                inLove[b] = true;
-                inLove[c] = true;
+          <span class="green">module.exports</span> = <span class="blue">function</span> <span class="yellow">getLoveTrianglesCount</span>(<span class="green">preferences</span> = []) {
+            <span class="blue">let</span> <span class="green">pairCounter</span> = 0, <span class="green">inLove</span> = {};
+            <span class="pink">for</span> (<span class="blue">let</span> <span class="green">i</span> = 0; <span class="green">i</span> < <span class="green">preferences</span>.length; <span class="green">i</span>++){
+              <span class="blue">let</span> <span class="green">a</span> = <span class="green">preferences</span>[<span class="green">i</span>], <span class="green">b</span> = <span class="green">preferences</span>[<span class="green">a</span> - 1], <span class="green">c</span> = <span class="green">preferences</span>[<span class="green">b</span> - 1];
+              <span class="pink">if</span> (<span class="green">preferences</span>[<span class="green">c</span> - 1] === <span class="green">a</span> && (<span class="green">a</span> != <span class="green">b</span> && <span class="green">a</span> != <span class="green">c</span> && <span class="green">b</span> != <span class="green">c</span>) && !<span class="green">inLove</span>[<span class="green">a</span>] && !<span class="green">inLove</span>[<span class="green">b</span>] && !<span class="green">inLove</span>[<span class="green">c</span>]){
+                ++<span class="green">pairCounter</span>;
+                <span class="green">inLove</span>[<span class="green">a</span>] = <span class="blue">true</span>;
+                <span class="green">inLove</span>[<span class="green">b</span>] = <span class="blue">true</span>;
+                <span class="green">inLove</span>[<span class="green">c</span>] = <span class="blue">true</span>;
               }
             }
-            return pairCounter;
-          };
-
-          
-
-          function tokenize(sign){
-            if (!isNaN(Number(sign))){
-              return Number(sign);
-            }
-            return sign;
-          }
-          
-          function simple_assembler(program, context) {
-              let output = context || {}, commands, key, val1, val2;
-              for (let i = 0; i < program.length; i++){
-                  commands = program[i].split(' ');
-                  key = commands[0], val1 = tokenize(commands[1]), val2 = tokenize(commands[2]);
-                  if (key === "mov"){
-                      if (typeof val2 === "string"){
-                          output[val1] = output[val2];
-                      } else {
-                          output[val1] = val2;
-                      }
-                  } else if (key === "inc"){
-                      ++output[val1];
-                  } else if (key === "dec"){
-                      --output[val1];
-                  } else if (key === "jnz"){
-                      if (output[val1] !== 0){
-                          i += val2 - 1;
-                      }
-                  }
-              }
-            return output;
+            <span class="pink">return</span> <span class="green">pairCounter</span>;
           };
         </pre>
+        <p>you can find other examples on my <a href="https://github.com/nextdesusu">github page</a></p>
       </article>
   </main>
   <footer>

@@ -1,1 +1,1 @@
-#My solution to codejam-cv task
+#My solution to rsschool-cv-html task
