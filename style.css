@@ -37,11 +37,54 @@ article {
     transition: background-color .2s;
 }
 
+article h2:before {
+    content: "";
+    display: inline-block;
+    width: 3vh;
+    height: 3vh;
+    background-size: 3vh;
+    background-repeat: no-repeat;
+    margin-right: 3px;
+}
+
+.name:before {
+    background-image: url("img/heart.png");
+}
+
+.goal:before {
+    background-image: url("img/planet.png");
+}
+
+.mail:before {
+    background-image: url("img/mail.png");
+}
+
+.skills:before {
+    background-image: url("img/skills.png");
+}
+
+.experience:before {
+    background-image: url("img/experience.png");
+}
+
+.education:before{
+    background-image: url("img/education.png");
+}
+
+.english:before{
+    background-image: url("img/english.png");
+}
+
+.code:before {
+    background-image: url("img/gears.png");
+}
+
+
 article:hover{
     background-color: rgba(49, 153, 223, 1);
 }
 
-.code {
+.code-pre {
     text-align: left;
 }
 
@@ -53,6 +96,17 @@ footer {
 
 footer a {
     color: white;
+}
+
+.git:before {
+    content: "";
+    display: inline-block;
+    width: 2vh;
+    height: 2vh;
+    background-size: 2vh;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    background-image: url("img/git.png");
 }
 
 .blue {
