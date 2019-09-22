@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Codejam-cv</title>
@@ -58,7 +58,7 @@
         <pre class="code-pre">
           <span class="green">module.exports</span> = <span class="blue">function</span> <span class="yellow">getLoveTrianglesCount</span>(<span class="green">preferences</span> = []) {
             <span class="blue">let</span> <span class="green">pairCounter</span> = 0, <span class="green">inLove</span> = {};
-            <span class="pink">for</span> (<span class="blue">let</span> <span class="green">i</span> = 0; <span class="green">i</span> < <span class="green">preferences</span>.length; <span class="green">i</span>++){
+            <span class="pink">for</span> (<span class="blue">let</span> <span class="green">i</span> = 0; <span class="green">i</span> &lt; <span class="green">preferences</span>.length; <span class="green">i</span>++){
               <span class="blue">let</span> <span class="green">a</span> = <span class="green">preferences</span>[<span class="green">i</span>], <span class="green">b</span> = <span class="green">preferences</span>[<span class="green">a</span> - 1], <span class="green">c</span> = <span class="green">preferences</span>[<span class="green">b</span> - 1];
               <span class="pink">if</span> (<span class="green">preferences</span>[<span class="green">c</span> - 1] === <span class="green">a</span> && (<span class="green">a</span> != <span class="green">b</span> && <span class="green">a</span> != <span class="green">c</span> && <span class="green">b</span> != <span class="green">c</span>) && !<span class="green">inLove</span>[<span class="green">a</span>] && !<span class="green">inLove</span>[<span class="green">b</span>] && !<span class="green">inLove</span>[<span class="green">c</span>]){
                 ++<span class="green">pairCounter</span>;
